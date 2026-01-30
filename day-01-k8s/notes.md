@@ -124,5 +124,5 @@ kubectl delete pod
 ---
 
 ## Key DevOps Takeaway (Day 1)
->Kubernetes does not care about individual resources.
->Kubernetes only enforces the desired state defined by controllers.
+- Kubernetes does not care about individual resources.
+- Kubernetes only enforces the desired state defined by controllers.
