@@ -1,0 +1,28 @@
+# Day 3 – Kubernetes Services
+
+## What is a Service?
+
+### Definition:
+A Service is a Kubernetes resource that provides a stable network endpoint to access Pods.
+
+### DevOps meaning:
+Services allow applications to be accessed reliably even when Pods are recreated, scaled, or replaced.
+
+### Why it exists:
+Pod IPs are temporary and cannot be exposed directly. Services solve this by using labels and stable networking.
+
+---
+
+## NodePort Service (Hands-On)
+
+- NodePort exposes an application on a fixed port of the node
+- Traffic flows from the node to the Service and then to Pods
+- Used mainly for local testing and learning
+
+---
+
+## Observations
+
+- Pod IPs can change, but Service access remains stable
+- Services use labels to discover Pods
+- Kubernetes automatically load-balances traffic across Pods
