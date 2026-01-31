@@ -26,3 +26,19 @@ Pod IPs are temporary and cannot be exposed directly. Services solve this by usi
 - Pod IPs can change, but Service access remains stable
 - Services use labels to discover Pods
 - Kubernetes automatically load-balances traffic across Pods
+
+---
+
+## ClusterIP vs NodePort
+
+### ClusterIP
+- Default and most commonly used Service type
+- Exposes applications only inside the cluster
+- Used for internal communication between services
+- Provides better security by default
+
+### NodePort
+- Exposes applications on a port of each node
+- Used mainly for learning and local testing
+- Not commonly used directly in production
+
