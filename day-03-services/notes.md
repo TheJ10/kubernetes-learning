@@ -42,3 +42,12 @@ Pod IPs are temporary and cannot be exposed directly. Services solve this by usi
 - Used mainly for learning and local testing
 - Not commonly used directly in production
 
+---
+
+## Service Load Balancing (Observed)
+
+- Services route traffic using Endpoints
+- Endpoints represent the current list of healthy Pods
+- When Pods are deleted or recreated, Endpoints update automatically
+- Clients are not affected by Pod changes
+
