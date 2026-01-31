@@ -5,8 +5,8 @@
 ### Definition:
 A Deployment is a Kubernetes resource that manages Pods by ensuring the desired number of replicas are running at all times.
 
-### General meaning:
-A Deployment is used to run applications in a stable and reliable way by automatically creating, replacing, and managing Pods.
+### DevOps meaning:
+A Deployment is the primary Kubernetes resource DevOps teams use to run and manage applications in production with self-healing and controlled scaling.
 
 ### Why it exists:
 Standalone Pods do not self-heal. If a Pod crashes or is deleted, it does not come back automatically. Deployments solve this problem by continuously monitoring and maintaining Pods.
@@ -18,8 +18,8 @@ Standalone Pods do not self-heal. If a Pod crashes or is deleted, it does not co
 ### Definition:
 A ReplicaSet is a Kubernetes resource that ensures a specified number of identical Pods are running.
 
-### General meaning:
-A ReplicaSet keeps track of how many Pods should exist and creates or deletes Pods to match that number.
+### DevOps meaning:
+ReplicaSets are used by Kubernetes internally to ensure the correct number of Pods are running, but DevOps teams usually manage them indirectly through Deployments.
 
 ### Why it exists:
 Kubernetes needs a mechanism to maintain availability. ReplicaSets provide this by enforcing the desired number of Pods.
